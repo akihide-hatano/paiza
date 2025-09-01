@@ -14,7 +14,7 @@ for case in "${test_cases[@]}"; do
 
     # Node.jsスクリプトを実行
     actual_output=$(echo "$input" | node week.js | tr -d '\n')
-    
+
     if [ "$actual_output" == "$expected_output" ]; then
         echo "✅ OK: 入力 '$input' -> 期待: '$expected_output' / 実際: '$actual_output'"
     else
