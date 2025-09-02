@@ -48,7 +48,6 @@ class BakingSweetsTest extends TestCase
 
         $this->assertEquals($expectedOutput, $output);
     }
-    
     /**
      * @test
      */
