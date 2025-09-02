@@ -4,6 +4,9 @@
         //標準入力を確定
         $input_str = trim(fgets(STDIN));
         //入力されてた値のvalidation
+        if(empty($input_str)){
+            throw new Exception('入力してください');
+        }
         if(!is_numeric($input_str))
         {
             throw new Exception('入力値が不正です。数値を入力してください');
