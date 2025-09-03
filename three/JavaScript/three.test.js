@@ -1,4 +1,3 @@
-
 // テスト対象の関数を three.js からインポート
 const { calculateApplePrice } = require('./three');
 
@@ -6,15 +5,15 @@ const { calculateApplePrice } = require('./three');
 describe('calculateApplePrice', () => {
 
   // test.each() で複数の有効なテストデータをまとめてテスト
-  test.each([
-    ['3000', '9000'],
-    ['1100', '3300'],
-    ['0', '0'],
-    ['10000', '30000'],
-  ])('有効な入力値 "%s" に対して正しい結果を返す', (input, expected) => {
+    test.each([
+        ['3000', '9000'],
+        ['1100', '3300'],
+        ['0', '0'],
+        ['10000', '30000'],
+])('有効な入力値 "%s" に対して正しい結果を返す', (input, expected) => {
     // calculateApplePrice() を実行し、期待される値と一致するか検証
     expect(calculateApplePrice(input)).toBe(expected);
-  });
+    });
 
   // test.each() で複数の無効なテストデータをまとめてテスト
   test.each([
