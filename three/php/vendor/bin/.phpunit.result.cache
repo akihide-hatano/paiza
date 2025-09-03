@@ -1,0 +1,1 @@
+{"version":2,"defects":{"ThreeTest::testItReturnsCorrectPriceForValidInput":8,"ThreeTest::testItReturnsErrorForInvalidInput":8},"times":{"ThreeTest::testItReturnsCorrectPriceForValidInput":0.003,"ThreeTest::testItReturnsErrorForInvalidInput":0}}
