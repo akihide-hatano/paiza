@@ -5,6 +5,11 @@
             "Hatanotakihide\\Php\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "akihide-hatano",
