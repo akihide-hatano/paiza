@@ -9,7 +9,7 @@ class EveDayTest extends TestCase
     private function cmd(): string
     {
         // tests/ から一つ上の階層にある ive.php を指す
-        $script = __DIR__ . '/../ive.php';
+        $script = __DIR__ . '/../eve.php';
         return 'php ' . escapeshellarg($script);
     }
 
